@@ -1,0 +1,80 @@
+markdownExploder: true
+
+# === GOOGLE INTERNAL SEO CONFIGURATION ===
+googleSeoEcosystem:
+  orchestratorFile: docs/google-seo-strategy.md
+  complianceFile: docs/seo-compliance-framework.md
+  crossProductCoordination: docs/cross-product-seo-coordination.md
+  algorithmMonitoring: docs/algorithm-update-monitoring.md
+
+# === ENTERPRISE SEO DOCUMENTATION ===
+enterpriseSeoDocs:
+  technicalAuditFile: docs/enterprise-technical-audit.md
+  contentAuthorityFile: docs/content-authority-strategy.md
+  linkComplianceFile: docs/link-building-compliance.md
+  contextualSignalsFile: docs/contextual-signals-strategy.md
+  aiIntegrationFile: docs/seo-ai-integration.md
+  dataAnalyticsFile: docs/seo-data-analytics.md
+  complianceAuditFile: docs/compliance-audit-framework.md
+
+# === COMPETITIVE INTELLIGENCE ===
+competitorAnalysis:
+  competitorAnalysisFile: docs/competitor-analysis.md
+  marketResearchFile: docs/market-research.md
+  competitorMonitoringFile: docs/competitor-monitoring.md
+  priceIntelligenceFile: docs/price-intelligence.md
+  ethicalResearchGuidelinesFile: docs/ethical-research-guidelines.md
+
+# === GOOGLE-SPECIFIC INTEGRATIONS ===
+googleIntegrations:
+  searchConsoleApiAccess: true
+  analytics360Integration: true
+  pagespeedInsightsApi: true
+  cloudPlatformIntegration: true
+  internalAlgorithmData: true
+  geminiAiIntegration: true
+  bigQueryAnalytics: true
+  competitiveIntelligenceAccess: true
+  webScrapingInfrastructure: true
+  firecrawlMcpIntegration: true
+  fetchMcpIntegration: true
+
+# === COMPLIANCE & GOVERNANCE ===
+compliance:
+  antitrustCompliance: true
+  regulatoryFramework: docs/regulatory-compliance-framework.md
+  auditTrails: true
+  roleBasedAccess: true
+  dataGovernance: docs/data-governance-policy.md
+  ethicalGuidelines: docs/ethical-seo-guidelines.md
+
+# === ALWAYS LOAD FILES FOR SEO SPECIALISTS ===
+devLoadAlwaysFiles:
+  - docs/google-seo-strategy.md
+  - docs/seo-compliance-framework.md
+  - docs/cross-product-seo-coordination.md
+  - docs/algorithm-update-monitoring.md
+  - docs/regulatory-compliance-framework.md
+  - docs/ethical-seo-guidelines.md
+  - docs/ethical-research-guidelines.md
+
+# === DEBUG AND MONITORING ===
+devDebugLog: .ai/seo-debug-log.md
+devStoryLocation: docs/seo-initiatives
+agentCoreDump: .ai/seo-core-dump{n}.md
+
+# === LEGACY SUPPORT ===
+prd:
+  prdFile: docs/prd.md
+  prdVersion: v4
+  prdSharded: true
+  prdShardedLocation: docs/prd
+  epicFilePattern: epic-{n}*.md
+
+architecture:
+  architectureFile: docs/architecture.md
+  architectureVersion: v4
+  architectureSharded: true
+  architectureShardedLocation: docs/architecture
+
+customTechnicalDocuments: null

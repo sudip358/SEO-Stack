@@ -1,0 +1,305 @@
+version: 5.0.0-google-seo
+installed_at: '2025-06-25T19:44:10.000Z'
+install_type: google-enterprise-seo
+agent: google-seo-ecosystem
+ide_setup: null
+ides_setup:
+  - roo
+  - google-internal-systems
+
+# Google SEO Enterprise Configuration Files
+google_seo_files:
+  - path: .roomodes
+    hash: google-seo-enterprise-modes
+    modified: true
+    description: "Google Enterprise SEO specialist modes"
+  - path: .seo-core\core-config.yml
+    hash: google-enterprise-config
+    modified: true
+    description: "Google Enterprise SEO configuration"
+
+# Google SEO Specialist Agents
+google_seo_agents:
+  - path: .seo-core\agents\google-seo-orchestrator.md
+    hash: google-seo-orchestrator-v1
+    modified: false
+    description: "Google SEO Ecosystem Orchestrator"
+  - path: .seo-core\agents\google-technical-seo-architect.md
+    hash: google-technical-seo-v1
+    modified: false
+    description: "Google Technical SEO Architect"
+  - path: .seo-core\agents\google-content-authority-strategist.md
+    hash: google-content-authority-v1
+    modified: false
+    description: "Google Content Authority Strategist"
+  - path: .seo-core\agents\google-authority-compliance-specialist.md
+    hash: google-authority-compliance-v1
+    modified: false
+    description: "Authority Link Building & Compliance"
+  - path: .seo-core\agents\google-contextual-signals-expert.md
+    hash: google-contextual-signals-v1
+    modified: false
+    description: "Google Contextual Signals Expert"
+  - path: .seo-core\agents\google-seo-ai-engineer.md
+    hash: google-seo-ai-v1
+    modified: false
+    description: "Google SEO AI Engineer"
+  - path: .seo-core\agents\google-seo-data-scientist.md
+    hash: google-seo-data-v1
+    modified: false
+    description: "Google SEO Data Scientist"
+  - path: .seo-core\agents\google-seo-compliance-auditor.md
+    hash: google-seo-compliance-v1
+    modified: false
+    description: "Google SEO Compliance Auditor"
+  - path: .seo-core\agents\google-competitor-analyst.md
+    hash: google-competitor-analyst-v1
+    modified: false
+    description: "Google Competitor Analysis Specialist"
+  - path: .seo-core\agents\schema-generator.md
+    hash: schema-generator-v1
+    modified: true
+    description: "Semantic Schema Master & Structured Data Architect"
+
+# Google SEO Team Configuration
+google_seo_teams:
+  - path: .seo-core\agent-teams\team-google-seo.yml
+    hash: google-seo-team-v1
+    modified: false
+    description: "Google SEO Specialist Ecosystem Team"
+
+# Legacy SEO Core Files (maintained for compatibility)
+legacy_seo_files:
+  - path: .seo-core\workflows\greenfield-ui.yml
+    hash: fed0d7f34062ff95
+    modified: false
+  - path: .seo-core\workflows\greenfield-service.yml
+    hash: 9250ed616aecfb6c
+    modified: false
+  - path: .seo-core\workflows\greenfield-fullstack.yml
+    hash: 6d650ead514b3cd8
+    modified: false
+  - path: .seo-core\workflows\brownfield-ui.yml
+    hash: 00ba2e9c095151d0
+    modified: false
+  - path: .seo-core\workflows\brownfield-service.yml
+    hash: 8b7748bb6010c557
+    modified: false
+  - path: .seo-core\workflows\brownfield-fullstack.yml
+    hash: 0317b34832a19627
+    modified: false
+  - path: .seo-core\utils\workflow-management.md
+    hash: 6c9da44e60ec257f
+    modified: false
+  - path: .seo-core\utils\web-agent-startup-instructions.md
+    hash: 27ee619b1a953aa6
+    modified: false
+  - path: .seo-core\utils\template-format.md
+    hash: c91208908af1dc78
+    modified: false
+  - path: .seo-core\utils\file-resolution-context.md
+    hash: a17fd3670e680f0c
+    modified: false
+  - path: .seo-core\templates\story-tmpl.md
+    hash: 3d8d98f09c3bcd3a
+    modified: false
+  - path: .seo-core\templates\project-brief-tmpl.md
+    hash: 4574687e30632eed
+    modified: false
+  - path: .seo-core\templates\prd-tmpl.md
+    hash: b5d75306c428615b
+    modified: false
+  - path: .seo-core\templates\market-research-tmpl.md
+    hash: 3e0481172cc9f056
+    modified: false
+  - path: .seo-core\templates\fullstack-architecture-tmpl.md
+    hash: 969ca155b5832956
+    modified: false
+  - path: .seo-core\templates\front-end-spec-tmpl.md
+    hash: fb4866eaeb8722fb
+    modified: false
+  - path: .seo-core\templates\front-end-architecture-tmpl.md
+    hash: 84025d1fc469d2c5
+    modified: false
+  - path: .seo-core\templates\competitor-analysis-tmpl.md
+    hash: d4e25586a643f8ca
+    modified: false
+  - path: .seo-core\templates\brownfield-prd-tmpl.md
+    hash: 3c6039fa53337ba3
+    modified: false
+  - path: .seo-core\templates\brownfield-architecture-tmpl.md
+    hash: c7b0962d7e856aae
+    modified: false
+  - path: .seo-core\templates\architecture-tmpl.md
+    hash: b8daeb43d0196ee1
+    modified: false
+  - path: .seo-core\tasks\shard-doc.md
+    hash: 0a04158f420a09df
+    modified: false
+  - path: .seo-core\tasks\review-story.md
+    hash: cb88d2aed30afe7d
+    modified: false
+  - path: .seo-core\tasks\kb-mode-interaction.md
+    hash: 97623a1fbcb686e4
+    modified: false
+  - path: .seo-core\tasks\index-docs.md
+    hash: 349f0ddf65dd71fe
+    modified: false
+  - path: .seo-core\tasks\generate-ai-frontend-prompt.md
+    hash: 1298309d4e874b0b
+    modified: false
+  - path: .seo-core\tasks\execute-checklist.md
+    hash: e83f4ae155bb5db8
+    modified: false
+  - path: .seo-core\tasks\document-project.md
+    hash: 6daded58e413997d
+    modified: false
+  - path: .seo-core\tasks\doc-migration-task.md
+    hash: 6a86e5d9cd386452
+    modified: false
+  - path: .seo-core\tasks\create-next-story.md
+    hash: be7699b750a382e3
+    modified: false
+  - path: .seo-core\tasks\create-doc.md
+    hash: 63ef4f97bfd66c1b
+    modified: false
+  - path: .seo-core\tasks\create-deep-research-prompt.md
+    hash: a104cb9b17cde3b7
+    modified: false
+  - path: .seo-core\tasks\correct-course.md
+    hash: 4da2f889fbc8b457
+    modified: false
+  - path: .seo-core\tasks\core-dump.md
+    hash: 44ac4d753c5ff573
+    modified: false
+  - path: .seo-core\tasks\brownfield-create-story.md
+    hash: 6e5cd0247836c4de
+    modified: false
+  - path: .seo-core\tasks\brownfield-create-epic.md
+    hash: 1b2b6c8b67a176ee
+    modified: false
+  - path: .seo-core\tasks\brainstorming-techniques.md
+    hash: 075818b207444cb2
+    modified: false
+  - path: .seo-core\tasks\advanced-elicitation.md
+    hash: 0950e5318989db16
+    modified: false
+  - path: .seo-core\data\technical-preferences.md
+    hash: 6530bed845540b0d
+    modified: false
+  - path: .seo-core\data\seo-kb.md
+    hash: cc192f1a55b71304
+    modified: false
+  - path: .seo-core\checklists\story-draft-checklist.md
+    hash: 28d5c2d3e9088320
+    modified: false
+  - path: .seo-core\checklists\story-dod-checklist.md
+    hash: 06ab7e73a69f930a
+    modified: false
+  - path: .seo-core\checklists\po-master-checklist.md
+    hash: 89d2dc785aa0e8a7
+    modified: false
+  - path: .seo-core\checklists\pm-checklist.md
+    hash: 139209e205a92628
+    modified: false
+  - path: .seo-core\checklists\change-checklist.md
+    hash: 5f2e21564d452d35
+    modified: false
+  - path: .seo-core\checklists\architect-checklist.md
+    hash: 99f4655b9ff99dd1
+    modified: false
+  - path: .seo-core\agents\ux-expert.md
+    hash: db26962b08a17c7b
+    modified: false
+  - path: .seo-core\agents\sm.md
+    hash: 92ff5d6215ca2dcb
+    modified: false
+  - path: .seo-core\agents\qa.md
+    hash: be99105e59b52422
+    modified: false
+  - path: .seo-core\agents\po.md
+    hash: 76d33c1721142f31
+    modified: false
+  - path: .seo-core\agents\pm.md
+    hash: 40f796bdefcd14c6
+    modified: false
+  - path: .seo-core\agents\dev.md
+    hash: 3e65e0ce05572906
+    modified: false
+  - path: .seo-core\agents\seo-orchestrator.md
+    hash: c26017d6501d2e06
+    modified: false
+  - path: .seo-core\agents\seo-master.md
+    hash: 1a35aa8a54c996d0
+    modified: false
+  - path: .seo-core\agents\architect.md
+    hash: 8c7f7244f7394781
+    modified: false
+  - path: .seo-core\agents\analyst.md
+    hash: f04c2ac401442edc
+    modified: false
+  - path: .seo-core\agent-teams\team-no-ui.yml
+    hash: db791eaa9b060ad3
+    modified: false
+  - path: .seo-core\agent-teams\team-ide-minimal.yml
+    hash: 600b6795116fd74e
+    modified: false
+  - path: .seo-core\agent-teams\team-fullstack.yml
+    hash: 8adda579fff343cd
+    modified: false
+  - path: .seo-core\agent-teams\team-all.yml
+    hash: 788067c0fd19c76d
+    modified: false
+
+# Google Enterprise SEO Capabilities
+enterprise_capabilities:
+  regulatory_compliance:
+    - "Antitrust and competition law adherence"
+    - "Digital Markets Act (DMA) compliance"
+    - "Consumer protection regulation compliance"
+    - "International regulatory framework adherence"
+  google_infrastructure_integration:
+    - "Gemini AI Advanced integration"
+    - "PaLM API Enterprise access"
+    - "Vertex AI Platform integration"
+    - "BigQuery Enterprise analytics"
+    - "Google Cloud Platform optimization"
+  advanced_seo_features:
+    - "Cross-product SEO coordination"
+    - "AI-powered predictive analytics"
+    - "Real-time algorithm update monitoring"
+    - "Enterprise-scale technical optimization"
+    - "Compliance risk assessment and management"
+  security_clearances:
+    - "CONFIDENTIAL - Google Internal Use Only"
+    - "Google Infrastructure Access"
+    - "Algorithm Data Access"
+    - "Legal & Compliance Access"
+    - "AI Platform Advanced Access"
+
+# Deployment Notes
+deployment_notes:
+  target_environment: "Google Enterprise Internal Systems"
+  security_requirements: "Maximum security clearance required"
+  compliance_frameworks: "Full regulatory compliance mandatory"
+  scalability_requirements: "Enterprise-scale across 100+ Google properties"
+  integration_requirements: "Deep integration with Google's proprietary infrastructure"
+  ai_capabilities: "Advanced AI automation and machine learning integration"
+  
+# Success Metrics Framework
+success_metrics:
+  business_impact:
+    - "Cross-product organic revenue optimization"
+    - "Market share in organic search results"
+    - "User engagement across Google properties"
+    - "Cost efficiency of organic acquisition"
+  technical_excellence:
+    - "Core Web Vitals performance at scale"
+    - "Technical SEO health across products"
+    - "Infrastructure optimization effectiveness"
+    - "AI automation efficiency gains"
+  compliance_adherence:
+    - "Regulatory compliance scores"
+    - "Risk mitigation effectiveness"
+    - "Audit trail completeness"
+    - "Ethical standards adherence"

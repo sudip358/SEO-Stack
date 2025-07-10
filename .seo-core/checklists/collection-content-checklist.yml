@@ -1,0 +1,199 @@
+# Collection Content Creation Checklist
+
+metadata:
+  title: "E-commerce Collection Page Content Creation Checklist"
+  version: "1.0"
+  last_updated: "2025-01-07"
+  purpose: "Ensure systematic, high-quality SEO content creation for e-commerce collection pages"
+  agent: "collection-content-strategist"
+
+pre_creation_analysis:
+  url_analysis:
+    - fetch_collection_url: "Use MCP tools to retrieve and analyze provided collection URL"
+    - identify_product_category: "Determine if hardware, lighting, or decor accessories"
+    - analyze_existing_content: "Review current page content and structure"
+    - identify_target_audience: "Understand primary customer segments"
+    - assess_competition: "Review competitor content for differentiation opportunities"
+  
+  keyword_research:
+    - primary_keyword_identification: "Identify main target keyword from URL and category"
+    - secondary_keyword_mapping: "Find 5-7 related and semantic keywords"
+    - long_tail_opportunity_analysis: "Discover buying intent phrases"
+    - search_volume_consideration: "Estimate keyword difficulty and opportunity"
+    - competitor_keyword_gaps: "Find keywords competitors may be missing"
+
+  sitemap_integration_planning:
+    - review_collection_sitemap: "Analyze collection_sitemap.md file thoroughly"
+    - identify_relevant_collections: "Select 6-8 related collections for internal linking"
+    - plan_anchor_text_strategy: "Create natural, keyword-rich anchor text variations"
+    - map_linking_opportunities: "Plan where links will be integrated naturally"
+    - verify_link_relevance: "Ensure all selected links are closely related to main category"
+
+content_structure_development:
+  heading_strategy:
+    - create_seo_optimized_h1: "Primary keyword + brand integration in H1"
+    - develop_h2_headings: "Create 7-8 strategic H2s with exact/related match keywords"
+    - ensure_featured_snippet_potential: "Structure headings for potential featured snippets"
+    - maintain_logical_flow: "Ensure headings follow logical content progression"
+    - include_question_based_headings: "Address common customer questions in headings"
+  
+  content_planning:
+    - opening_paragraph_outline: "Plan 100-150 word introduction with primary keywords"
+    - section_content_mapping: "Outline 150-200 words per H2 section"
+    - internal_linking_placement: "Plan natural integration points for collection links"
+    - value_proposition_section: "Plan 'Why Choose Residence Supply' content"
+    - closing_section_outline: "Plan encouraging conclusion with call-to-action"
+
+content_creation_execution:
+  writing_quality:
+    - maintain_brand_voice: "Premium, artisan-focused, sophisticated tone throughout"
+    - ensure_natural_language: "Avoid robotic or AI-generated language patterns"
+    - demonstrate_expertise: "Show deep knowledge of home decor and interior design"
+    - address_customer_concerns: "Answer common questions and purchasing hesitations"
+    - provide_practical_value: "Include actionable advice and insights"
+  
+  seo_optimization:
+    - primary_keyword_integration: "Include primary keyword in H1, opening paragraph, and 2+ H2s"
+    - secondary_keyword_distribution: "Naturally integrate related terms throughout"
+    - keyword_density_management: "Maintain 1-2% density for primary keyword"
+    - semantic_keyword_inclusion: "Include related terms and synonyms"
+    - avoid_keyword_stuffing: "Ensure natural, readable content flow"
+  
+  internal_linking_execution:
+    - natural_link_integration: "Weave collection links contextually within content"
+    - proper_anchor_text: "Use descriptive, keyword-rich anchor text"
+    - link_distribution: "Spread links throughout content, avoid clustering"
+    - relevance_verification: "Ensure all links are highly relevant to content"
+    - link_count_optimization: "Include 4-6 strategic internal links"
+    - complete_url_requirement: "ALL links must use complete URLs: https://residencesupply.com/collections/[name]"
+    - no_relative_urls: "FORBIDDEN: Never use relative URLs like /collections/[name]"
+
+category_specific_adaptations:
+  hardware_content_focus:
+    - emphasize_durability: "Highlight long-lasting quality and construction"
+    - detail_finish_options: "Explain available finishes and coordination"
+    - address_compatibility: "Cover installation and compatibility considerations"
+    - include_maintenance_guidance: "Provide care and maintenance information"
+    - showcase_versatility: "Demonstrate style flexibility and applications"
+  
+  lighting_content_focus:
+    - discuss_ambiance_creation: "Explain how lighting affects room atmosphere"
+    - provide_sizing_guidance: "Include room sizing and fixture selection tips"
+    - address_installation: "Cover installation considerations and requirements"
+    - emphasize_energy_efficiency: "Highlight energy-saving features when applicable"
+    - coordinate_style_elements: "Show how lighting complements decor styles"
+  
+  decor_accessories_focus:
+    - provide_styling_tips: "Offer practical decorating and placement advice"
+    - suggest_room_applications: "Show versatility across different spaces"
+    - highlight_design_impact: "Explain how pieces transform spaces"
+    - include_seasonal_considerations: "Mention seasonal styling opportunities"
+    - emphasize_material_quality: "Highlight craftsmanship and material excellence"
+
+technical_implementation:
+  html_structure:
+    - proper_heading_hierarchy: "Ensure correct H1, H2 structure"
+    - clean_paragraph_formatting: "Use proper <p> tags for all content"
+    - valid_html_syntax: "Verify all tags are properly opened and closed"
+    - mobile_friendly_structure: "Ensure content works well on mobile devices"
+    - semantic_html_usage: "Use appropriate HTML elements for content meaning"
+  
+  markup_restrictions:
+    - no_div_tags: "FORBIDDEN: Never use <div> tags in content output"
+    - no_css_classes: "FORBIDDEN: Never use class or id attributes"
+    - no_custom_styling: "FORBIDDEN: No inline styles or custom CSS markup"
+    - semantic_html_only: "ALLOWED: h1-h6, p, ul, ol, li, strong, em, a, br only"
+    - clean_markup_focus: "Content must be styleable externally without markup dependencies"
+  
+  shop_by_navigation:
+    - category_appropriate_sections: "Create relevant 'Shop by' categories for product type"
+    - proper_link_formatting: "Format navigation links as clean HTML"
+    - relevant_collection_selection: "Choose collections that closely match category"
+    - descriptive_anchor_text: "Use clear, keyword-rich navigation labels"
+    - logical_grouping: "Group navigation options logically"
+    - enhanced_navigation_sections: "Include 2-5 'Shop by' sections based on product category"
+    - pipe_separated_format: "Use format: Shop by Type: Item1 | Item2 | Item3 | Item4 | Item5"
+    - complete_url_links: "Each navigation item must link with complete URL format"
+    - category_specific_adaptation: "Adapt section names (Type, Material, Style, Room) based on collection"
+
+quality_assurance:
+  content_review:
+    - eliminate_placeholder_text: "Remove all template placeholders and brackets"
+    - verify_internal_links: "Ensure all collection links are accurate and relevant"
+    - check_brand_voice_consistency: "Maintain Residence Supply tone throughout"
+    - validate_seo_optimization: "Confirm keyword integration and optimization"
+    - ensure_user_value: "Verify content provides genuine value to customers"
+  
+  technical_validation:
+    - html_syntax_check: "Validate proper HTML structure and syntax"
+    - mobile_responsiveness: "Ensure content displays well on mobile devices"
+    - loading_speed_consideration: "Keep content optimized for fast loading"
+    - accessibility_basics: "Ensure proper heading structure for accessibility"
+    - cross_browser_compatibility: "Consider compatibility across browsers"
+  
+  final_checklist:
+    - word_count_verification: "Confirm 150-200 words per H2 section"
+    - keyword_density_check: "Verify optimal keyword density without stuffing"
+    - internal_link_count: "Confirm 4-6 strategic internal links included"
+    - brand_voice_alignment: "Ensure premium, artisan-focused tone maintained"
+    - conversion_optimization: "Verify content encourages customer action"
+
+post_creation_validation:
+  seo_compliance:
+    - primary_keyword_placement: "H1, opening paragraph, multiple H2s"
+    - secondary_keyword_integration: "Natural distribution throughout content"
+    - meta_description_consideration: "Content suitable for meta description creation"
+    - featured_snippet_optimization: "Headings structured for snippet potential"
+    - user_intent_alignment: "Content matches search intent for target keywords"
+  
+  user_experience:
+    - readability_score: "Content appropriate for target audience reading level"
+    - engagement_factors: "Content encourages reading and interaction"
+    - practical_value: "Information helps customers make purchasing decisions"
+    - trust_building_elements: "Content builds confidence in brand and products"
+    - call_to_action_effectiveness: "Clear next steps for interested customers"
+
+error_prevention:
+  common_mistakes_to_avoid:
+    - avoid_keyword_stuffing: "Never sacrifice readability for keyword density"
+    - prevent_generic_content: "Ensure category-specific and brand-specific content"
+    - avoid_broken_internal_links: "Verify all collection URLs are accurate"
+    - prevent_ai_detection: "Maintain natural, human-like writing style"
+    - avoid_duplicate_content: "Ensure unique content for each collection page"
+  
+  quality_red_flags:
+    - robotic_language_patterns: "Flag repetitive or unnatural phrasing"
+    - insufficient_expertise_demonstration: "Ensure deep product knowledge shown"
+    - weak_internal_linking: "Avoid forced or irrelevant link placements"
+    - poor_brand_voice_alignment: "Flag content that doesn't match brand tone"
+    - missing_value_proposition: "Ensure unique selling points are highlighted"
+
+success_metrics:
+  content_quality_indicators:
+    - natural_keyword_integration: "Keywords flow naturally within content"
+    - demonstrated_expertise: "Content shows deep product and industry knowledge"
+    - user_value_creation: "Content helps customers make informed decisions"
+    - brand_voice_consistency: "Maintains premium, artisan-focused tone"
+    - strategic_internal_linking: "Links enhance user journey and SEO value"
+  
+  seo_optimization_markers:
+    - primary_keyword_optimization: "Appropriate density and placement"
+    - semantic_keyword_inclusion: "Related terms naturally integrated"
+    - heading_structure_optimization: "H1/H2 hierarchy supports SEO goals"
+    - internal_linking_strategy: "Links support topical authority building"
+    - user_intent_satisfaction: "Content answers target audience questions"
+
+completion_verification:
+  final_output_checklist:
+    - complete_html_structure: "Full HTML ready for implementation"
+    - all_sections_included: "H1, intro, 7-8 H2 sections, conclusion, navigation"
+    - internal_links_integrated: "4-6 relevant collection links naturally placed"
+    - category_appropriate_navigation: "Shop by sections match product category"
+    - seo_optimization_statement: "Include final SEO compliance confirmation"
+  
+  delivery_standards:
+    - professional_presentation: "Clean, well-formatted HTML output"
+    - comprehensive_coverage: "All required sections and elements included"
+    - brand_alignment: "Content reflects Residence Supply values and voice"
+    - technical_accuracy: "Proper HTML structure and valid syntax"
+    - user_focus: "Content prioritizes customer needs and experience"

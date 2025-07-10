@@ -1,0 +1,168 @@
+name: "Google SEO Specialist Ecosystem"
+description: "Enterprise-grade SEO team for Google's internal operations with regulatory compliance, AI integration, and cross-product coordination"
+purpose: "Comprehensive SEO optimization across Google's product portfolio while maintaining regulatory compliance and leveraging proprietary Google infrastructure"
+
+# Primary SEO Specialist Team
+core_team:
+  - google-seo-orchestrator          # Strategic lead and cross-product coordinator
+  - google-technical-seo-architect   # Technical foundation and infrastructure optimization
+  - google-content-authority-strategist # Content strategy and E-E-A-T excellence
+  - google-authority-compliance-specialist # Ethical link building and brand protection
+  - google-contextual-signals-expert # Anchor text and internal linking optimization
+
+# Advanced Capabilities Team
+advanced_team:
+  - google-seo-ai-engineer          # AI-powered automation and machine learning
+  - google-seo-data-scientist       # Advanced analytics and predictive modeling
+  - google-seo-compliance-auditor   # Regulatory compliance and risk management
+
+# Team Coordination Structure
+coordination:
+  primary_orchestrator: google-seo-orchestrator
+  technical_lead: google-technical-seo-architect
+  compliance_lead: google-seo-compliance-auditor
+  ai_innovation_lead: google-seo-ai-engineer
+  data_intelligence_lead: google-seo-data-scientist
+
+# Specialized Working Groups
+working_groups:
+  technical_excellence:
+    - google-technical-seo-architect
+    - google-seo-ai-engineer
+    - google-contextual-signals-expert
+  content_authority:
+    - google-content-authority-strategist
+    - google-authority-compliance-specialist
+    - google-seo-data-scientist
+  compliance_governance:
+    - google-seo-compliance-auditor
+    - google-authority-compliance-specialist
+    - google-seo-orchestrator
+  ai_innovation:
+    - google-seo-ai-engineer
+    - google-seo-data-scientist
+    - google-technical-seo-architect
+
+# Cross-Product Coordination
+cross_product_scope:
+  search_properties:
+    - "Google Search"
+    - "Google Images"
+    - "Google News"
+    - "Google Shopping"
+    - "Google Scholar"
+  platform_properties:
+    - "YouTube"
+    - "Google Maps"
+    - "Google My Business"
+    - "Google Play Store"
+    - "Chrome Web Store"
+  productivity_properties:
+    - "Gmail"
+    - "Google Drive"
+    - "Google Docs/Sheets/Slides"
+    - "Google Calendar"
+    - "Google Photos"
+  business_properties:
+    - "Google Ads"
+    - "Google Analytics"
+    - "Google Cloud Console"
+    - "Firebase Console"
+    - "Google for Business"
+
+# Compliance Requirements
+compliance_framework:
+  regulatory_oversight:
+    - "Antitrust and competition law compliance"
+    - "Digital Markets Act (DMA) compliance"
+    - "Consumer protection regulations"
+    - "International regulatory requirements"
+  ethical_standards:
+    - "Google's AI principles adherence"
+    - "White-hat SEO practices only"
+    - "Transparency and accountability"
+    - "User privacy protection"
+  audit_requirements:
+    - "Comprehensive audit trails"
+    - "Regular compliance assessments"
+    - "Legal review and approval processes"
+    - "Incident response procedures"
+
+# Technology Integration
+google_infrastructure:
+  ai_platforms:
+    - "Gemini AI Advanced"
+    - "PaLM API Enterprise"
+    - "Vertex AI Platform"
+    - "BigQuery ML"
+  data_platforms:
+    - "BigQuery Enterprise"
+    - "Google Analytics 360"
+    - "Google Cloud Platform"
+    - "Internal Search Quality Systems"
+  monitoring_systems:
+    - "Core Web Vitals Enterprise Monitoring"
+    - "PageSpeed Insights API Advanced"
+    - "Internal Algorithm Update Systems"
+    - "Compliance Risk Assessment Platform"
+
+# Success Metrics
+kpi_framework:
+  business_impact:
+    - "Organic revenue across Google properties"
+    - "Cross-product user engagement optimization"
+    - "Market share in organic search results"
+    - "Cost efficiency of organic acquisition"
+  technical_excellence:
+    - "Core Web Vitals performance across products"
+    - "Technical SEO health scores"
+    - "Site architecture optimization metrics"
+    - "Mobile-first indexing compliance"
+  content_authority:
+    - "E-E-A-T signal strength across content"
+    - "Content quality and helpfulness scores"
+    - "Topical authority development"
+    - "User satisfaction metrics"
+  compliance_adherence:
+    - "Regulatory compliance scores"
+    - "Risk mitigation effectiveness"
+    - "Audit trail completeness"
+    - "Ethical standards adherence"
+
+# Escalation Procedures
+escalation_matrix:
+  level_1_operational:
+    responsible: "Individual specialist agents"
+    scope: "Day-to-day optimization and monitoring"
+    approval: "Team lead approval"
+  level_2_strategic:
+    responsible: "google-seo-orchestrator"
+    scope: "Cross-product strategy and coordination"
+    approval: "VP-level approval required"
+  level_3_compliance:
+    responsible: "google-seo-compliance-auditor"
+    scope: "Regulatory and legal compliance issues"
+    approval: "Legal department coordination"
+  level_4_crisis:
+    responsible: "Full team coordination"
+    scope: "Algorithm updates, penalties, regulatory inquiries"
+    approval: "C-level approval and legal review"
+
+# Communication Protocols
+communication_framework:
+  daily_operations:
+    - "Automated monitoring alerts and dashboards"
+    - "Cross-specialist collaboration on active projects"
+    - "Real-time compliance monitoring and reporting"
+  weekly_coordination:
+    - "Cross-product performance review meetings"
+    - "Strategic initiative progress assessments"
+    - "Risk assessment and mitigation planning"
+  monthly_governance:
+    - "Comprehensive performance and compliance review"
+    - "Executive reporting and strategic planning"
+    - "Regulatory update assessment and implementation"
+  quarterly_strategic:
+    - "Annual strategy development and refinement"
+    - "Competitive intelligence and market analysis"
+    - "Technology platform and capability assessment"

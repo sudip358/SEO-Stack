@@ -1,0 +1,606 @@
+# Google Enterprise SEO API Integration Guide
+# Classification: CONFIDENTIAL - Google Internal Use Only
+# Version: 1.0
+# Last Updated: 2025-01-01
+# Review Frequency: Quarterly
+
+metadata:
+  document_type: "API Integration Guide"
+  classification: "CONFIDENTIAL"
+  version: "1.0"
+  owner: "Google SEO AI Engineer"
+  review_frequency: "Quarterly"
+  approval_required: ["Technical Lead", "Security Team", "API Governance"]
+  effective_date: "2025-01-01"
+
+# Google Internal APIs Integration
+google_internal_apis:
+  
+  search_console_api:
+    endpoint: "https://www.googleapis.com/webmasters/v3"
+    authentication:
+      method: "OAuth 2.0 + Service Account"
+      scope: "https://www.googleapis.com/auth/webmasters"
+      credentials: "Service account key (JSON)"
+      rotation_frequency: "Quarterly"
+    
+    key_endpoints:
+      site_verification:
+        endpoint: "/sites/{siteUrl}"
+        method: "GET"
+        purpose: "Verify site ownership and access permissions"
+        rate_limits: "1000 requests/day per site"
+        
+      search_analytics:
+        endpoint: "/sites/{siteUrl}/searchAnalytics/query"
+        method: "POST"
+        purpose: "Query search performance data"
+        rate_limits: "200 requests/day per site"
+        max_rows: "25,000 per request"
+        
+      url_inspection:
+        endpoint: "/urlInspection/index:inspect"
+        method: "POST"
+        purpose: "Inspect individual URL status"
+        rate_limits: "2000 requests/day"
+        
+      sitemap_management:
+        endpoint: "/sites/{siteUrl}/sitemaps/{feedpath}"
+        methods: ["GET", "PUT", "DELETE"]
+        purpose: "Manage XML sitemaps"
+        rate_limits: "100 requests/day per site"
+    
+    data_extraction:
+      dimensions:
+        - "query" # Search queries
+        - "page" # Landing pages
+        - "country" # Geographic data
+        - "device" # Device categories
+        - "searchAppearance" # Rich results
+      metrics:
+        - "clicks" # Click count
+        - "impressions" # Impression count
+        - "ctr" # Click-through rate
+        - "position" # Average position
+      filters:
+        - "dimensionFilterGroups" # Filtering criteria
+        - "aggregationType" # Data aggregation method
+      date_range:
+        max_duration: "16 months"
+        data_freshness: "3 days delay"
+
+  analytics_360_api:
+    endpoint: "https://analyticsreporting.googleapis.com/v4"
+    authentication:
+      method: "OAuth 2.0 + Service Account"
+      scope: "https://www.googleapis.com/auth/analytics.readonly"
+      credentials: "Service account key with Analytics access"
+      
+    key_endpoints:
+      reports_batch_get:
+        endpoint: "/reports:batchGet"
+        method: "POST"
+        purpose: "Batch analytics data extraction"
+        rate_limits: "100 requests/100 seconds/user"
+        
+      real_time_reports:
+        endpoint: "/data/realtime"
+        method: "GET"
+        purpose: "Real-time analytics data"
+        rate_limits: "10 requests/second"
+        
+      user_activity:
+        endpoint: "/userActivity:search"
+        method: "POST"
+        purpose: "Individual user journey analysis"
+        rate_limits: "10 requests/second"
+    
+    seo_specific_metrics:
+      acquisition_metrics:
+        - "ga:organicSearches" # Organic search sessions
+        - "ga:searchResultViews" # Search result page views
+        - "ga:searchUniques" # Unique searches
+        - "ga:searchSessions" # Search sessions
+      engagement_metrics:
+        - "ga:avgSessionDuration" # Average session duration
+        - "ga:bounceRate" # Bounce rate
+        - "ga:pageviewsPerSession" # Pages per session
+        - "ga:goalConversionRateAll" # Goal conversion rate
+      revenue_metrics:
+        - "ga:transactionRevenue" # Transaction revenue
+        - "ga:revenuePerTransaction" # Revenue per transaction
+        - "ga:ecommerceConversionRate" # E-commerce conversion rate
+
+  pagespeed_insights_api:
+    endpoint: "https://www.googleapis.com/pagespeedonline/v5"
+    authentication:
+      method: "API Key"
+      credential_type: "Google Cloud API Key"
+      restrictions: "HTTP referrer restrictions"
+      
+    key_endpoints:
+      page_analysis:
+        endpoint: "/runPagespeed"
+        method: "GET"
+        purpose: "Analyze page speed and Core Web Vitals"
+        rate_limits: "400 requests/100 seconds"
+        
+    parameters:
+      required:
+        - "url" # Page URL to analyze
+        - "key" # API key
+      optional:
+        - "strategy" # mobile|desktop
+        - "category" # performance|accessibility|best-practices|seo|pwa
+        - "locale" # Language for results
+        - "utm_campaign" # UTM campaign tracking
+        - "utm_source" # UTM source tracking
+        
+    core_web_vitals_extraction:
+      largest_contentful_paint:
+        field_data: "loadingExperience.metrics.LARGEST_CONTENTFUL_PAINT_MS"
+        lab_data: "lighthouseResult.audits.largest-contentful-paint"
+        target: "< 2.5 seconds"
+        
+      interaction_to_next_paint:
+        field_data: "loadingExperience.metrics.INTERACTION_TO_NEXT_PAINT_MS"
+        lab_data: "lighthouseResult.audits.total-blocking-time"
+        target: "< 200 milliseconds"
+        
+      cumulative_layout_shift:
+        field_data: "loadingExperience.metrics.CUMULATIVE_LAYOUT_SHIFT_SCORE"
+        lab_data: "lighthouseResult.audits.cumulative-layout-shift"
+        target: "< 0.1"
+
+  youtube_analytics_api:
+    endpoint: "https://youtubeanalytics.googleapis.com/v2"
+    authentication:
+      method: "OAuth 2.0"
+      scope: "https://www.googleapis.com/auth/youtube.readonly"
+      
+    key_endpoints:
+      reports:
+        endpoint: "/reports"
+        method: "GET"
+        purpose: "YouTube channel and video analytics"
+        rate_limits: "3000 units/100 seconds"
+        
+    seo_relevant_metrics:
+      discovery_metrics:
+        - "views" # Total views
+        - "impressions" # Search impressions
+        - "impressionClickThroughRate" # CTR from search
+        - "averageViewDuration" # Average watch time
+      engagement_metrics:
+        - "likes" # Like count
+        - "dislikes" # Dislike count
+        - "comments" # Comment count
+        - "subscribersGained" # New subscribers
+      traffic_source_metrics:
+        - "youtubeSearch" # YouTube search traffic
+        - "googleSearch" # Google search traffic
+        - "suggestedVideo" # Suggested video traffic
+
+  my_business_api:
+    endpoint: "https://mybusiness.googleapis.com/v4"
+    authentication:
+      method: "OAuth 2.0"
+      scope: "https://www.googleapis.com/auth/business.manage"
+      
+    key_endpoints:
+      locations:
+        endpoint: "/accounts/{accountId}/locations"
+        method: "GET"
+        purpose: "Manage business locations"
+        
+      insights:
+        endpoint: "/accounts/{accountId}/locations/{locationId}/reportInsights"
+        method: "POST"
+        purpose: "Local search performance data"
+        
+    local_seo_metrics:
+      search_metrics:
+        - "QUERIES_DIRECT" # Direct searches
+        - "QUERIES_INDIRECT" # Discovery searches
+        - "VIEWS_MAPS" # Google Maps views
+        - "VIEWS_SEARCH" # Google Search views
+      action_metrics:
+        - "ACTIONS_WEBSITE" # Website clicks
+        - "ACTIONS_PHONE" # Phone calls
+        - "ACTIONS_DRIVING_DIRECTIONS" # Direction requests
+
+# Google AI Platform Integration
+ai_platform_integration:
+  
+  vertex_ai_api:
+    endpoint: "https://aiplatform.googleapis.com/v1"
+    authentication:
+      method: "Service Account + IAM"
+      scope: "https://www.googleapis.com/auth/cloud-platform"
+      
+    seo_ml_models:
+      content_quality_prediction:
+        model_endpoint: "/projects/{project}/locations/{location}/endpoints/{endpoint}"
+        purpose: "Predict content quality and E-E-A-T signals"
+        input_format: "JSON with text content and metadata"
+        output_format: "Quality score + confidence intervals"
+        
+      ranking_factor_analysis:
+        model_endpoint: "/projects/{project}/locations/{location}/endpoints/{endpoint}"
+        purpose: "Analyze ranking factor correlations"
+        input_format: "Page metrics and ranking data"
+        output_format: "Factor importance scores"
+        
+      keyword_opportunity_detection:
+        model_endpoint: "/projects/{project}/locations/{location}/endpoints/{endpoint}"
+        purpose: "Identify keyword opportunities"
+        input_format: "Current rankings + competitive data"
+        output_format: "Ranked opportunity list"
+
+  palm_api_integration:
+    endpoint: "https://generativelanguage.googleapis.com/v1beta"
+    authentication:
+      method: "API Key"
+      credential_type: "Generative AI API Key"
+      
+    seo_applications:
+      content_optimization:
+        model: "text-bison-001"
+        purpose: "Generate SEO-optimized content suggestions"
+        max_tokens: "8192"
+        temperature: "0.3"
+        
+      meta_description_generation:
+        model: "text-bison-001"
+        purpose: "Generate compelling meta descriptions"
+        max_tokens: "512"
+        temperature: "0.4"
+        
+      title_tag_optimization:
+        model: "text-bison-001"
+        purpose: "Optimize title tags for click-through rate"
+        max_tokens: "256"
+        temperature: "0.2"
+
+  gemini_api_integration:
+    endpoint: "https://generativelanguage.googleapis.com/v1beta"
+    authentication:
+      method: "API Key"
+      credential_type: "Gemini API Key"
+      
+    advanced_seo_capabilities:
+      multimodal_analysis:
+        model: "gemini-pro-vision"
+        purpose: "Analyze images for SEO optimization"
+        input_types: ["text", "image"]
+        output_format: "Structured SEO recommendations"
+        
+      competitive_content_analysis:
+        model: "gemini-pro"
+        purpose: "Analyze competitor content strategies"
+        context_window: "2 million tokens"
+        output_format: "Strategic insights and recommendations"
+
+# BigQuery Integration for SEO Data Warehousing
+bigquery_integration:
+  
+  seo_data_warehouse:
+    project_id: "google-seo-enterprise"
+    dataset_structure:
+      raw_data:
+        dataset_id: "seo_raw_data"
+        purpose: "Store unprocessed SEO data from various sources"
+        retention_days: "730" # 2 years
+        
+      processed_data:
+        dataset_id: "seo_processed_data"
+        purpose: "Store cleaned and transformed SEO data"
+        retention_days: "2555" # 7 years
+        
+      analytics_marts:
+        dataset_id: "seo_analytics_marts"
+        purpose: "Store aggregated data for reporting"
+        retention_days: "1095" # 3 years
+        
+      ml_features:
+        dataset_id: "seo_ml_features"
+        purpose: "Store feature engineered data for ML models"
+        retention_days: "1095" # 3 years
+
+  key_tables:
+    search_performance:
+      table_id: "search_console_performance"
+      schema:
+        - name: "date" | type: "DATE" | mode: "REQUIRED"
+        - name: "site_url" | type: "STRING" | mode: "REQUIRED"
+        - name: "query" | type: "STRING" | mode: "NULLABLE"
+        - name: "page" | type: "STRING" | mode: "NULLABLE"
+        - name: "country" | type: "STRING" | mode: "NULLABLE"
+        - name: "device" | type: "STRING" | mode: "NULLABLE"
+        - name: "clicks" | type: "INTEGER" | mode: "NULLABLE"
+        - name: "impressions" | type: "INTEGER" | mode: "NULLABLE"
+        - name: "ctr" | type: "FLOAT" | mode: "NULLABLE"
+        - name: "position" | type: "FLOAT" | mode: "NULLABLE"
+      partitioning:
+        field: "date"
+        type: "DAY"
+      clustering:
+        fields: ["site_url", "device", "country"]
+        
+    technical_metrics:
+      table_id: "core_web_vitals"
+      schema:
+        - name: "date" | type: "DATE" | mode: "REQUIRED"
+        - name: "url" | type: "STRING" | mode: "REQUIRED"
+        - name: "device_type" | type: "STRING" | mode: "REQUIRED"
+        - name: "lcp_score" | type: "FLOAT" | mode: "NULLABLE"
+        - name: "inp_score" | type: "FLOAT" | mode: "NULLABLE"
+        - name: "cls_score" | type: "FLOAT" | mode: "NULLABLE"
+        - name: "page_speed_score" | type: "INTEGER" | mode: "NULLABLE"
+      partitioning:
+        field: "date"
+        type: "DAY"
+      clustering:
+        fields: ["url", "device_type"]
+
+  sql_templates:
+    organic_traffic_analysis: |
+      SELECT 
+        date,
+        site_url,
+        SUM(clicks) as total_clicks,
+        SUM(impressions) as total_impressions,
+        AVG(position) as avg_position,
+        AVG(ctr) as avg_ctr
+      FROM `{project}.seo_processed_data.search_console_performance`
+      WHERE date BETWEEN '{start_date}' AND '{end_date}'
+        AND site_url = '{site_url}'
+      GROUP BY date, site_url
+      ORDER BY date DESC
+      
+    core_web_vitals_monitoring: |
+      SELECT 
+        url,
+        device_type,
+        AVG(lcp_score) as avg_lcp,
+        AVG(inp_score) as avg_inp,
+        AVG(cls_score) as avg_cls,
+        COUNT(*) as measurement_count
+      FROM `{project}.seo_processed_data.core_web_vitals`
+      WHERE date BETWEEN '{start_date}' AND '{end_date}'
+      GROUP BY url, device_type
+      HAVING avg_lcp > 2500 OR avg_inp > 200 OR avg_cls > 0.1
+      ORDER BY avg_lcp DESC
+
+# Data Pipeline Configuration
+data_pipelines:
+  
+  cloud_composer_dags:
+    search_console_etl:
+      dag_id: "search_console_daily_etl"
+      schedule_interval: "0 6 * * *" # Daily at 6 AM
+      default_args:
+        retries: 3
+        retry_delay: "300" # 5 minutes
+        email_on_failure: true
+        email_on_retry: false
+      tasks:
+        - extract_search_console_data
+        - validate_data_quality
+        - transform_and_load_bigquery
+        - update_analytics_marts
+        - send_completion_notification
+        
+    technical_seo_monitoring:
+      dag_id: "technical_seo_hourly_monitoring"
+      schedule_interval: "0 * * * *" # Hourly
+      tasks:
+        - extract_pagespeed_data
+        - extract_core_web_vitals
+        - validate_technical_metrics
+        - alert_on_performance_degradation
+        - update_technical_dashboards
+
+  dataflow_jobs:
+    real_time_seo_processing:
+      job_name: "seo-real-time-processor"
+      template: "streaming-template"
+      purpose: "Process real-time SEO events and alerts"
+      input_source: "Pub/Sub topic: seo-events"
+      output_destination: "BigQuery: seo_processed_data.real_time_events"
+      
+    ml_feature_engineering:
+      job_name: "seo-ml-feature-pipeline"
+      template: "batch-template"
+      purpose: "Generate ML features for SEO models"
+      schedule: "Daily"
+      input_source: "BigQuery: seo_processed_data.*"
+      output_destination: "BigQuery: seo_ml_features.*"
+
+# Security & Access Control
+security_configuration:
+  
+  api_security:
+    authentication_methods:
+      service_accounts:
+        creation_process: "IAM console + security review"
+        key_rotation: "Quarterly"
+        permissions: "Principle of least privilege"
+        monitoring: "Service account usage tracking"
+        
+      oauth_applications:
+        registration_process: "Google Cloud Console + approval workflow"
+        scope_limitations: "Minimal required scopes only"
+        consent_screens: "Internal use consent screens"
+        monitoring: "OAuth usage analytics"
+        
+    network_security:
+      ip_restrictions:
+        allowed_ranges: "Google Cloud IP ranges + corporate VPN"
+        restriction_method: "API key restrictions + firewall rules"
+        monitoring: "IP-based access logging"
+        
+      rate_limiting:
+        implementation: "Cloud Endpoints + Apigee"
+        limits: "Per-user and per-application quotas"
+        burst_handling: "Exponential backoff algorithms"
+        monitoring: "Rate limit violation alerts"
+
+  data_access_control:
+    bigquery_security:
+      dataset_permissions:
+        raw_data: "Data engineers + senior SEO team"
+        processed_data: "SEO team + analytics team"
+        analytics_marts: "All authorized users"
+        ml_features: "AI engineers + data scientists"
+        
+      row_level_security:
+        implementation: "BigQuery row-level security policies"
+        criteria: "User role + product ownership"
+        monitoring: "Data access audit logs"
+        
+      column_level_security:
+        sensitive_columns: "PII fields + competitive data"
+        access_control: "IAM + column-level permissions"
+        masking: "Dynamic data masking for non-privileged users"
+
+# Monitoring & Alerting
+monitoring_configuration:
+  
+  api_monitoring:
+    cloud_monitoring_metrics:
+      api_latency:
+        metric: "logging.googleapis.com/request_latency"
+        threshold: "5 seconds"
+        alerting: "Slack + email notifications"
+        
+      error_rates:
+        metric: "logging.googleapis.com/request_count"
+        threshold: "5% error rate"
+        alerting: "Immediate PagerDuty alert"
+        
+      quota_usage:
+        metric: "serviceruntime.googleapis.com/quota/rate/net_usage"
+        threshold: "80% of quota"
+        alerting: "Email notification to admins"
+        
+    custom_dashboards:
+      seo_api_performance:
+        platform: "Google Cloud Monitoring"
+        metrics:
+          - "API response times"
+          - "Request volumes"
+          - "Error rates by API"
+          - "Quota utilization"
+        refresh_interval: "1 minute"
+        
+      data_pipeline_health:
+        platform: "Google Cloud Monitoring"
+        metrics:
+          - "Pipeline execution status"
+          - "Data freshness"
+          - "Processing latency"
+          - "Data quality scores"
+        refresh_interval: "5 minutes"
+
+  sla_definitions:
+    api_availability:
+      target: "99.9% uptime"
+      measurement: "HTTP 200 response rate"
+      reporting: "Monthly SLA reports"
+      
+    data_freshness:
+      search_console_data: "< 24 hours"
+      analytics_data: "< 4 hours"
+      technical_metrics: "< 1 hour"
+      real_time_events: "< 5 minutes"
+      
+    response_times:
+      api_endpoints: "< 2 seconds 95th percentile"
+      dashboard_loads: "< 5 seconds"
+      report_generation: "< 30 seconds"
+
+# Best Practices & Guidelines
+best_practices:
+  
+  api_usage_guidelines:
+    request_optimization:
+      - "Batch requests when possible to reduce API calls"
+      - "Use appropriate date ranges to avoid large data pulls"
+      - "Implement exponential backoff for retry logic"
+      - "Cache frequently accessed data locally"
+      - "Use field selectors to limit response size"
+      
+    error_handling:
+      - "Implement comprehensive error handling for all API calls"
+      - "Log detailed error information for debugging"
+      - "Gracefully degrade functionality when APIs are unavailable"
+      - "Implement circuit breaker patterns for external APIs"
+      - "Provide user-friendly error messages"
+      
+    security_practices:
+      - "Never log or expose API keys or sensitive credentials"
+      - "Rotate API keys and service account keys regularly"
+      - "Use IAM policies to restrict API access appropriately"
+      - "Implement request signing for sensitive operations"
+      - "Monitor and alert on unusual API usage patterns"
+
+  data_quality_assurance:
+    validation_rules:
+      - "Validate data types and formats before processing"
+      - "Check for required fields and handle missing data"
+      - "Implement range checks for numerical values"
+      - "Verify data consistency across different sources"
+      - "Flag and investigate anomalous data patterns"
+      
+    quality_metrics:
+      - "Data completeness percentage"
+      - "Data accuracy rates"
+      - "Schema compliance rates"
+      - "Duplicate detection rates"
+      - "Timeliness of data delivery"
+
+# Troubleshooting & Support
+troubleshooting:
+  
+  common_issues:
+    authentication_failures:
+      symptoms: "401 Unauthorized errors"
+      causes: ["Expired credentials", "Insufficient permissions", "Invalid scopes"]
+      solutions: ["Refresh tokens", "Update IAM permissions", "Verify OAuth scopes"]
+      escalation: "Security team if permissions issues persist"
+      
+    rate_limit_exceeded:
+      symptoms: "429 Too Many Requests errors"
+      causes: ["Exceeding API quotas", "Burst traffic", "Inefficient request patterns"]
+      solutions: ["Implement backoff", "Optimize request patterns", "Request quota increases"]
+      escalation: "API team for quota adjustment requests"
+      
+    data_quality_issues:
+      symptoms: "Inconsistent or missing data"
+      causes: ["Source system changes", "Pipeline failures", "Validation errors"]
+      solutions: ["Check source systems", "Review pipeline logs", "Update validation rules"]
+      escalation: "Data engineering team for pipeline issues"
+      
+  support_contacts:
+    api_support:
+      team: "Google Cloud Support"
+      contact: "Cloud Console support cases"
+      sla: "Response within 4 hours for P1 issues"
+      
+    internal_support:
+      team: "SEO Technical Team"
+      contact: "Internal chat channels"
+      sla: "Response within 2 hours during business hours"
+      
+    escalation_procedures:
+      level_1: "Team lead + technical specialist"
+      level_2: "Engineering manager + senior architect"
+      level_3: "VP Engineering + external vendor escalation"
+
+---
+# Classification Footer
+document_classification: "CONFIDENTIAL - Google Internal Use Only"
+handling_instructions: "This document contains sensitive API integration information. Unauthorized disclosure is prohibited."
+review_date: "2025-04-01"
+approved_by: "Technical Lead, Security Team, API Governance"

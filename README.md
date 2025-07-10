@@ -62,59 +62,17 @@ Use for creating structured data schemas, JSON-LD generation, semantic markup an
 
 ## 📋 Installation Instructions
 
-Follow these steps to install and set up SEO-Stack:
+This framework is designed to be used with the Roo Code VS Code extension. No additional installation steps are required once you've cloned the repository.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/SEO-Stack.git
+   git clone https://github.com/sudip358/SEO-Stack.git
    cd SEO-Stack
    ```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Configure your environment**
-   - Create a `.env` file with your API keys and configuration
-   - Use the template in `.env.example` as a reference
-
-4. **Initialize the SEO core**
-   ```bash
-   npm run init
-   ```
-
-5. **Verify installation**
-   ```bash
-   npm run verify
-   ```
-
-## 🖥️ System Requirements
-
-- Node.js 16.x or higher
-- NPM 8.x or higher
-- At least 4GB of RAM
-- 1GB of available disk space
-
-## 🔄 Usage Examples
-
-### Example 1: SEO Audit with Technical SEO Architect Mode
-
-```bash
-npm run mode:technical-seo -- --target=example.com --depth=full --report=json
-```
-
-### Example 2: Content Strategy with Content Authority Strategist Mode
-
-```bash
-npm run mode:content-authority -- --keywords="your keywords" --competitors="competitor1.com,competitor2.com"
-```
-
-### Example 3: Generating Schema Markup with Schema Generator Mode
-
-```bash
-npm run mode:schema-generator -- --type=product --input=product-data.json
-```
+2. **Open in VS Code**
+   - Open the folder in Visual Studio Code
+   - Start using the various SEO modes through the Roo Code extension
 
 ## 🗂️ Project Structure
 

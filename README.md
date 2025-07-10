@@ -62,17 +62,10 @@ Use for creating structured data schemas, JSON-LD generation, semantic markup an
 
 ## 📋 Installation Instructions
 
-This framework is designed to be used with the Roo Code VS Code extension. No additional installation steps are required once you've cloned the repository.
-
 1. **Clone the repository**
    ```bash
    git clone https://github.com/sudip358/SEO-Stack.git
-   cd SEO-Stack
    ```
-
-2. **Open in VS Code**
-   - Open the folder in Visual Studio Code
-   - Start using the various SEO modes through the Roo Code extension
 
 ## 🗂️ Project Structure
 
@@ -99,24 +92,6 @@ SEO-Stack tracks key performance indicators including:
 - Backlink profile quality
 - Organic traffic and conversions
 - Compliance and risk assessment
-
-## 🔐 Security & Compliance
-
-SEO-Stack is designed with security and compliance in mind:
-
-- Data protection for competitive intelligence
-- Access control for sensitive information
-- Regular security audits
-- Compliance with antitrust regulations
-- Digital Markets Act (DMA) adherence
-- User data protection in analytics
-
-## 📚 Additional Resources
-
-- [Full Documentation](https://seo-stack.docs.example.com)
-- [API Reference](https://seo-stack.docs.example.com/api)
-- [Best Practices Guide](https://seo-stack.docs.example.com/best-practices)
-- [Community Support](https://community.seo-stack.example.com)
 
 ## 📝 License
 

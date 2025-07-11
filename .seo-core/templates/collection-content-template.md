@@ -29,10 +29,10 @@ H2 Sections (7-8 planned):
 ### Step 3: Internal Linking Strategy
 ```
 Relevant Collections from Sitemap:
-- [COLLECTION_1] - Anchor: [NATURAL_ANCHOR_TEXT] - URL: https://residencesupply.com/collections/[collection-name]
-- [COLLECTION_2] - Anchor: [NATURAL_ANCHOR_TEXT] - URL: https://residencesupply.com/collections/[collection-name]
-- [COLLECTION_3] - Anchor: [NATURAL_ANCHOR_TEXT] - URL: https://residencesupply.com/collections/[collection-name]
-- [COLLECTION_4] - Anchor: [NATURAL_ANCHOR_TEXT] - URL: https://residencesupply.com/collections/[collection-name]
+- [COLLECTION_1] - Anchor: [NATURAL_ANCHOR_TEXT] - URL: https://test.com/collections/[collection-name]
+- [COLLECTION_2] - Anchor: [NATURAL_ANCHOR_TEXT] - URL: https://test.com/collections/[collection-name]
+- [COLLECTION_3] - Anchor: [NATURAL_ANCHOR_TEXT] - URL: https://test.com/collections/[collection-name]
+- [COLLECTION_4] - Anchor: [NATURAL_ANCHOR_TEXT] - URL: https://test.com/collections/[collection-name]
 
 Enhanced Shop By Navigation (Category-Specific):
 Hardware Collections:

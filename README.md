@@ -66,6 +66,8 @@ Use for creating structured data schemas, JSON-LD generation, semantic markup an
    ```bash
    git clone https://github.com/sudip358/SEO-Stack.git
    ```
+2. Install Roo Code Extension on VS Code or any IDE
+3. Open this folder on VS code and choose your mode.
 
 ## 🗂️ Project Structure
 

@@ -109,7 +109,7 @@
 
 ### Brand Voice Guidelines
 
-#### Residence Supply Brand Characteristics
+#### test Brand Characteristics
 - **Premium Positioning**: High-quality, artisan-focused language
 - **Spanish Mediterranean Heritage**: Emphasize craftsmanship and tradition
 - **Sophisticated Tone**: Professional yet accessible communication

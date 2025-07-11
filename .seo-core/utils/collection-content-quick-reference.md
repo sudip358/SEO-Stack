@@ -2,7 +2,7 @@
 
 ## System Overview
 
-The Collection Content Strategist is a specialized e-commerce SEO content creation system designed for Residence Supply's collection pages. This system includes:
+The Collection Content Strategist is a specialized e-commerce SEO content creation system designed for test's collection pages. This system includes:
 
 - **Agent**: Isabella, the Collection Content Strategist
 - **Mode**: `collection-content-strategist`
@@ -68,7 +68,7 @@ The agent will request:
 
 [Continue for 7-8 H2 sections...]
 
-<h2>Why Choose Residence Supply [Category]?</h2>
+<h2>Why Choose test [Category]?</h2>
 <p>[Unique value proposition content]</p>
 
 <p>[Closing encouragement with call-to-action]</p>
@@ -189,4 +189,4 @@ Review: Check output against quality standards
 Implement: Use provided HTML in collection page
 ```
 
-This system ensures consistent, high-quality, SEO-optimized content creation for all Residence Supply collection pages while maintaining brand voice and user experience standards.
+This system ensures consistent, high-quality, SEO-optimized content creation for all test collection pages while maintaining brand voice and user experience standards.

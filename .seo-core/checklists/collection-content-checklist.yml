@@ -41,7 +41,7 @@ content_structure_development:
     - opening_paragraph_outline: "Plan 100-150 word introduction with primary keywords"
     - section_content_mapping: "Outline 150-200 words per H2 section"
     - internal_linking_placement: "Plan natural integration points for collection links"
-    - value_proposition_section: "Plan 'Why Choose Residence Supply' content"
+    - value_proposition_section: "Plan 'Why Choose test' content"
     - closing_section_outline: "Plan encouraging conclusion with call-to-action"
 
 content_creation_execution:
@@ -65,7 +65,7 @@ content_creation_execution:
     - link_distribution: "Spread links throughout content, avoid clustering"
     - relevance_verification: "Ensure all links are highly relevant to content"
     - link_count_optimization: "Include 4-6 strategic internal links"
-    - complete_url_requirement: "ALL links must use complete URLs: https://residencesupply.com/collections/[name]"
+    - complete_url_requirement: "ALL links must use complete URLs: https://test.com/collections/[name]"
     - no_relative_urls: "FORBIDDEN: Never use relative URLs like /collections/[name]"
 
 category_specific_adaptations:
@@ -120,7 +120,7 @@ quality_assurance:
   content_review:
     - eliminate_placeholder_text: "Remove all template placeholders and brackets"
     - verify_internal_links: "Ensure all collection links are accurate and relevant"
-    - check_brand_voice_consistency: "Maintain Residence Supply tone throughout"
+    - check_brand_voice_consistency: "Maintain test tone throughout"
     - validate_seo_optimization: "Confirm keyword integration and optimization"
     - ensure_user_value: "Verify content provides genuine value to customers"
   
@@ -194,6 +194,6 @@ completion_verification:
   delivery_standards:
     - professional_presentation: "Clean, well-formatted HTML output"
     - comprehensive_coverage: "All required sections and elements included"
-    - brand_alignment: "Content reflects Residence Supply values and voice"
+    - brand_alignment: "Content reflects test values and voice"
     - technical_accuracy: "Proper HTML structure and valid syntax"
     - user_focus: "Content prioritizes customer needs and experience"

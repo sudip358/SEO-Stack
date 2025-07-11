@@ -189,7 +189,7 @@ Content Review:
 
 ## Content Quality Standards
 
-### Residence Supply Brand Voice Elements:
+### test Brand Voice Elements:
 - **Tone**: Professional expertise while remaining accessible
 - **Language**: Premium, sophisticated, quality-conscious
 - **Focus**: Handcrafted quality, Spanish Mediterranean heritage

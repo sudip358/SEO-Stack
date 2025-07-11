@@ -93,10 +93,8 @@ SEO-Stack tracks key performance indicators including:
 - Organic traffic and conversions
 - Compliance and risk assessment
 
-<<<<<<< HEAD
 =======
 
->>>>>>> 7c4e9159296e3b5274fdd98e637877ef7797f47e
 ## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

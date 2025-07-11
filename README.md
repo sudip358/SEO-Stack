@@ -68,7 +68,8 @@ Use for creating structured data schemas, JSON-LD generation, semantic markup an
    ```
 2. Install Roo Code Extension on VS Code or any IDE
 3. Open this folder on VS code and choose your mode.
-
+4. Put your sitemap inside sitemap folder
+5. Use DataforSEO, Search Console, Google Analytic MCP
 ## 🗂️ Project Structure
 
 ```

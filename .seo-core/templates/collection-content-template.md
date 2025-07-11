@@ -53,14 +53,14 @@ Decor Collections:
 - Shop by Style: Modern | Bohemian | Industrial | Rustic | Contemporary | Minimalist
 - Shop by Room: Living Room | Bedroom | Kitchen | Dining Room | Office | Bathroom
 
-NOTE: ALL links must use complete URLs with https://residencesupply.com/collections/[name] format
+NOTE: ALL links must use complete URLs with https://test.com/collections/[name] format
 ```
 
 ### Step 4: Content Outline with Word Counts
 ```
 Opening Paragraph (100-150 words):
 - Introduce collection with primary keywords
-- Mention Residence Supply brand value
+- Mention test brand value
 - Set premium, artisan tone
 
 H2 Section 1 (150-200 words):
@@ -75,7 +75,7 @@ H2 Section 2 (150-200 words):
 
 [Continue for all 7-8 H2 sections...]
 
-Why Choose Residence Supply [Category]? (150-200 words):
+Why Choose test [Category]? (150-200 words):
 - Highlight unique value propositions
 - Emphasize handcrafted quality
 - Mention Spanish Mediterranean heritage
@@ -134,7 +134,7 @@ Brand Voice:
 
 [Continue for all H2 sections...]
 
-<h2>Why Choose Residence Supply [Category Name]?</h2>
+<h2>Why Choose test [Category Name]?</h2>
 <p>[VALUE_PROPOSITION_CONTENT]</p>
 
 <p>[CLOSING_ENCOURAGEMENT_PARAGRAPH]</p>
